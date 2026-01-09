@@ -3,7 +3,7 @@
 Overview
 
 This project is a real-time video communication system inspired by Google Meet.
-The architecture is based on WebRTC with an SFU model, designed to scale beyond simple peer-to-peer connections.
+The architecture is based on WebRTC with Mesh Model.
 
 This document tracks week-by-week progress.
 
@@ -18,8 +18,7 @@ No WebRTC or signaling logic was implemented in this phase.
 
 #### Decisions Finalized
 
-Architecture: SFU (Selective Forwarding Unit)
-Communication Type: Many-to-many
+Architecture: Mesh
 Maximum participants per room: 10
 Core features (initial):
 Video
@@ -46,5 +45,3 @@ Nginx installed and configured (reserved for later reverse proxy usage)
 Clean backend project structure
 README defining scope and constraints
 Backend server boots successfully
-No WebRTC logic introduced (by design)
-Week 1 Status: ✅ Complete

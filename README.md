@@ -82,3 +82,43 @@ Importance of proper SDP exchange order<br>
 ICE candidate gathering behavior<br>
 Autoplay and mute constraints in browsers<br>
 Why signaling is mandatory for real-world calls<br>
+
+
+<br>
+
+
+### Week 4–5 — Signaling Server, Authentication & Real-Time Messaging ✅
+
+### Objective
+
+Transition from a local-only WebRTC demo to a real-world multi-user system by implementing signaling, authentication, and real-time messaging. This phase focused on enabling actual peer discovery and connection establishment across different devices and networks.
+
+### Scope of Work
+
+Designed and implemented a WebSocket-based signaling server using Node.js<br>
+Implemented room-based signaling logic for multi-user communication<br>
+Added real-time text chat using WebSocket alongside video calls<br>
+
+### Implementation Details
+
+WebSocket server created to handle:
+
+Client connections and disconnections<br>
+Room join/leave events<br>
+Exchange of SDP offers and answers<br>
+ICE candidate forwarding between peers<br>
+
+### Key Learnings
+
+Why WebRTC requires an external signaling mechanism<br>
+Difference between signaling data and media data<br>
+Handling multiple peer connections in a mesh topology<br>
+Challenges of synchronizing SDP and ICE exchange in multi-user scenarios<br>
+
+### Deliverables Achieved
+
+Functional signaling server using WebSocket<br>
+Authenticated multi-user room support<br>
+Successful peer-to-peer connections across different devices and networks<br>
+
+repo link : https://github.com/myselfprincee/vido-backend

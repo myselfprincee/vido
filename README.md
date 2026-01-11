@@ -13,7 +13,6 @@ This document tracks week-by-week progress.
 
 Objective
 
-Lock decisions early to avoid architectural rework later.
 No WebRTC or signaling logic was implemented in this phase.
 
 #### Decisions Finalized
@@ -28,8 +27,8 @@ Join / Leave
 
 #### Conditional features:
 
-Screen sharing
-Recording
+Screen sharing<br>
+Recording<br>
 Chat
 
 #### Environment Setup
@@ -45,3 +44,41 @@ Nginx installed and configured (reserved for later reverse proxy usage)
 Clean backend project structure
 README defining scope and constraints
 Backend server boots successfully
+
+<hr>
+
+### Week 2–3 — WebRTC Fundamentals & Local Connection Demo ✅
+
+Objective
+
+Building conceptual and practical understanding of WebRTC by establishing peer-to-peer media flow in a controlled local environment. No production signaling, no TURN/STUN.
+
+### Scope of Work
+
+- Studied WebRTC architecture:
+- Peer-to-peer model
+- SDP (Session Description Protocol)
+- ICE candidates
+- Media tracks vs streams
+- Understood browser APIs:
+ - *getUserMedia*
+ - *RTCPeerConnection*
+ - *MediaStream*
+
+Implemented local-only WebRTC demo (same machine / same browser context)
+
+### Implementation Details
+
+Camera and microphone access tested using getUserMedia<br>
+Created two RTCPeerConnection instances locally to simulate caller–callee<br>
+Manual offer/answer exchange performed within the same application<br>
+Media tracks added explicitly to peer connections<br>
+Video rendered using video elements with srcObject<br>
+
+### Key Learnings
+
+Difference between tracks and streams<br>
+Importance of proper SDP exchange order<br>
+ICE candidate gathering behavior<br>
+Autoplay and mute constraints in browsers<br>
+Why signaling is mandatory for real-world calls<br>

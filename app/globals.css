@@ -4,5 +4,30 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+
+button {
+  @apply cursor-pointer py-2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-black;
+}
+
+/* p {
+  @apply ;
+} */
+
+/* Make every border dashed as per user request */
+*,
+::before,
+::after {
+  border-style: dashed !important;
 }
